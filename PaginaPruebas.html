@@ -5,14 +5,14 @@
 	<meta charset="utf-8" />
     <script src="Scripts/angular.js"></script>
 </head>
-<body>
+<body ng-controller="Estadisticas">
     <div id="Cuadro estadisticas" style="align-content:center">
         <div id="Tabla estadisticas">
             <table>
                 <tbody>
                     <tr id="Fuerza">
                         <td><input id="NombreFue" type="text" style="width:35px" /></td>
-                        <td><input id="BaseFue" type="text" style="width:25px" /></td>
+                        <td><input id="BaseFue" type="text" style="width:25px"/></td>
                         <td><input id="ModFue" type="text" style="width:25px" /></td>
                         <td><input id="TempFue" type="text" style="width:25px" /></td>
                         <td><input id="TempModFue" type="text" style="width:25px" /></td>
@@ -56,7 +56,7 @@
             </table>
         </div>
         <div>
-            <input id="Calcular" type="button" value="Calcular"/>
+            <input id="Calcular" type="button" value="Calcular" ng-click="CalcularEstadisticas()"/>
         </div>
     </div>
 </body>

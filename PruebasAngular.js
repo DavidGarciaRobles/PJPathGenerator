@@ -1,6 +1,10 @@
-﻿//Comienzo para Trabajar con Angular.
+﻿/// 
+/// <reference path="Modelo/Estadisticas.js" />
+//Comienzo para Trabajar con Angular.
 //
 //
+$.getScript("sModelo/Estadisticas.js");
+
 controller
 ('HomeCtrl',
     ['$scope', '$http', function ($scope, $http)
