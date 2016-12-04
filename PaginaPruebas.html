@@ -3,61 +3,72 @@
 <head>
     <title>PruebasAngular</title>
 	<meta charset="utf-8" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Angular -->
     <script src="Scripts/angular.js"></script>
 </head>
 <body ng-controller="Estadisticas">
-    <div id="Cuadro estadisticas" style="align-content:center">
-        <div id="Tabla estadisticas">
-            <table>
-                <tbody>
-                    <tr id="Fuerza">
-                        <td><input id="NombreFue" type="text" style="width:35px" /></td>
-                        <td><input id="BaseFue" type="text" style="width:25px"/></td>
-                        <td><input id="ModFue" type="text" style="width:25px" /></td>
-                        <td><input id="TempFue" type="text" style="width:25px" /></td>
-                        <td><input id="TempModFue" type="text" style="width:25px" /></td>
-                    </tr>
-                    <tr id="Destreza">
-                        <td><input id="NombreDes" type="text" style="width:35px" /></td>
-                        <td><input id="BaseDes" type="text" style="width:25px" /></td>
-                        <td><input id="ModDes" type="text" style="width:25px" /></td>
-                        <td><input id="TempDes" type="text" style="width:25px" /></td>
-                        <td><input id="TempModDes" type="text" style="width:25px" /></td>
-                    </tr>
-                    <tr id="Constitución">
-                        <td><input id="NombreCon" type="text" style="width:35px" /></td>
-                        <td><input id="BaseCon" type="text" style="width:25px" /></td>
-                        <td><input id="ModCon" type="text" style="width:25px" /></td>
-                        <td><input id="TempCon" type="text" style="width:25px" /></td>
-                        <td><input id="TempModCon" type="text" style="width:25px" /></td>
-                    </tr>
-                    <tr id="Inteligencia">
-                        <td><input id="NombreInt" type="text" style="width:35px" /></td>
-                        <td><input id="BaseInt" type="text" style="width:25px" /></td>
-                        <td><input id="ModInt" type="text" style="width:25px" /></td>
-                        <td><input id="TempInt" type="text" style="width:25px" /></td>
-                        <td><input id="TempModInt" type="text" style="width:25px" /></td>
-                    </tr>
-                    <tr id="Sabiduria">
-                        <td><input id="NombreSab" type="text" style="width:35px" /></td>
-                        <td><input id="BaseSab" type="text" style="width:25px" /></td>
-                        <td><input id="ModSab" type="text" style="width:25px" /></td>
-                        <td><input id="TempSab" type="text" style="width:25px" /></td>
-                        <td><input id="TempModSab" type="text" style="width:25px" /></td>
-                    </tr>
-                    <tr id="Carisma">
-                        <td><input id="NombreCar" type="text" style="width:35px" /></td>
-                        <td><input id="BaseCar" type="text" style="width:25px" /></td>
-                        <td><input id="ModCar" type="text" style="width:25px" /></td>
-                        <td><input id="TempCar" type="text" style="width:25px" /></td>
-                        <td><input id="TempModCar" type="text" style="width:25px" /></td>
-                    </tr>
-                </tbody>
-            </table>
+    <header></header>
+    <main>
+        <div id="Cuadro estadisticas" style="align-content:center">
+            <div id="Tabla estadisticas">
+                <table>
+                    <tbody>
+                        <tr id="Fuerza">
+                            <td><input id="NombreFue" type="text" style="width:35px" /></td>
+                            <td><input id="BaseFue" type="text" style="width:25px" /></td>
+                            <td><input id="ModFue" type="text" style="width:25px" /></td>
+                            <td><input id="TempFue" type="text" style="width:25px" /></td>
+                            <td><input id="TempModFue" type="text" style="width:25px" /></td>
+                        </tr>
+                        <tr id="Destreza">
+                            <td><input id="NombreDes" type="text" style="width:35px" /></td>
+                            <td><input id="BaseDes" type="text" style="width:25px" /></td>
+                            <td><input id="ModDes" type="text" style="width:25px" /></td>
+                            <td><input id="TempDes" type="text" style="width:25px" /></td>
+                            <td><input id="TempModDes" type="text" style="width:25px" /></td>
+                        </tr>
+                        <tr id="Constitución">
+                            <td><input id="NombreCon" type="text" style="width:35px" /></td>
+                            <td><input id="BaseCon" type="text" style="width:25px" /></td>
+                            <td><input id="ModCon" type="text" style="width:25px" /></td>
+                            <td><input id="TempCon" type="text" style="width:25px" /></td>
+                            <td><input id="TempModCon" type="text" style="width:25px" /></td>
+                        </tr>
+                        <tr id="Inteligencia">
+                            <td><input id="NombreInt" type="text" style="width:35px" /></td>
+                            <td><input id="BaseInt" type="text" style="width:25px" /></td>
+                            <td><input id="ModInt" type="text" style="width:25px" /></td>
+                            <td><input id="TempInt" type="text" style="width:25px" /></td>
+                            <td><input id="TempModInt" type="text" style="width:25px" /></td>
+                        </tr>
+                        <tr id="Sabiduria">
+                            <td><input id="NombreSab" type="text" style="width:35px" /></td>
+                            <td><input id="BaseSab" type="text" style="width:25px" /></td>
+                            <td><input id="ModSab" type="text" style="width:25px" /></td>
+                            <td><input id="TempSab" type="text" style="width:25px" /></td>
+                            <td><input id="TempModSab" type="text" style="width:25px" /></td>
+                        </tr>
+                        <tr id="Carisma">
+                            <td><input id="NombreCar" type="text" style="width:35px" /></td>
+                            <td><input id="BaseCar" type="text" style="width:25px" /></td>
+                            <td><input id="ModCar" type="text" style="width:25px" /></td>
+                            <td><input id="TempCar" type="text" style="width:25px" /></td>
+                            <td><input id="TempModCar" type="text" style="width:25px" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <input id="Calcular" type="button" value="Calcular" ng-click="CalcularEstadisticas()" />
+            </div>
+
         </div>
-        <div>
-            <input id="Calcular" type="button" value="Calcular" ng-click="CalcularEstadisticas()"/>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
