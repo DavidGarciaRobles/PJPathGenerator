@@ -1,0 +1,10 @@
+{
+  "npcClass.cleric": "Cleric",
+  "npcClass.figther": "Fighter",
+  "npcGeneratorForm.title.level": "Level",
+  "npcGeneratorForm.title.npcClass": "Class",
+  "npcGeneratorForm.title.race": "Race",
+  "npcGeneratorForm.title.role": "Role",
+  "race.elf": "Elf",
+  "race.human": "Human"
+}

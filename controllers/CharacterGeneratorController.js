@@ -1,26 +1,13 @@
-﻿var app = angular.module("myApp",[]);
+﻿angular.module("myApp").controller('CharacterGeneratorController', ['$scope', '$log', function ($scope, $log) {
 
-app.controller('CharacterGeneratorController', ['$scope', '$log', function ($scope, $log)
-{
-    $log.debug('Hello Debug!');
+    // Generacion de NPC
+    $scope.generateNPC = function () {
+        $log.info('CharacterGeneratorController - starting npc generating!');
+        //TODO Aplicar clase
+        //TODO Repartir caracteristicas en funcion de la clase
+        //TODO Aplicar raza
+        //TODO Asignar dotes
+        //TODO Asignar habilidades
+        // ...
+    }
 }]);
-
-app.controller("CargaComboClases", function ($scope, $http)
-{
-    //vamos a hacer uso de $http para obtener los datos
-    $http.get('http://localhost:51348/../ClasesNPC.json').success(function (data)
-    {
-        //enviamos los datos a la vista con el objeto $scope
-        $scope.datos = data;
-    });
-})
-
-app.controller("CargaComboRazas", function ($scope, $http)
-{
-    //vamos a hacer uso de $http para obtener los datos
-    $http.get('http://localhost:51348/../Razas.json').success(function (data)
-    {
-        //enviamos los datos a la vista con el objeto $scope
-        $scope.datos = data;
-    });
-})

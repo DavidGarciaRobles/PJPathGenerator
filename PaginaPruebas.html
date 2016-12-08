@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>PruebasAngular</title>
-	<meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -10,10 +10,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- Angular -->
-    <script src="Scripts/angular.js"></script>
-
+    <script src="Scripts/angular.js"></script> 
+    <script src="Scripts/angular-translate.js"></script>
+    <script src="Scripts/angular-translate-loader-static-files.min.js"></script>
     <script src="app.js"></script>
     <script src="controllers/CharacterGeneratorController.js"></script>
+    
 </head>
 <body>
     <header></header>
@@ -23,31 +25,34 @@
             <form class="form-inline" ng-submit="generateNPC()">
                 <!-- Raza del personaje -->
                 <div id="raza" class="form-group">
-                    <label for="raze">Raza:</label>
-                    <select ng-controller="CargaComboRazas" name="raze" ng-model="raze" required>
+                    <label for="raze">{{"npcGeneratorForm.title.race"|translate}}:</label>
+                    <select name="raze" ng-model="raze" required>
                         <!--TODO Deberia cargarlo por AJAX -->
-                        <option ng-repeat="data in datos" value= {{ data.IDRAZA }}>{{ data.RAZA }}</option>
+                        <option value="1">{{"race.elf"|translate}}</option>
+                        <option value="2">{{"race.human"|translate}}</option>
                     </select>
                 </div>
                 <!-- Clase del PNJ -->
                 <div id="claseNPC" class="form-group">
-                    <label for="claseNPC">Clase:</label>
-                    <select ng-controller="CargaComboClases" name="claseNPC" ng-model="classNPC" required>
+                    <label for="claseNPC">{{"npcGeneratorForm.title.npcClass"|translate}}:</label>
+                    <select name="claseNPC" ng-model="classNPC" required>
                         <!--TODO Deberia cargarlo por AJAX -->
-                        <option ng-repeat="data in datos" value= {{ data.IDCLASE }}>{{ data.NOMBRE }}</option>
+                        <option value="1">{{"npcClass.figther"|translate}}</option>
+                        <option value="2">{{"npcClass.cleric"|translate}}</option>
                     </select>
-                </div>
+                </div> 
                 <!-- Rol del PNJ -->
                 <!--<div id="roleNPC" class="form-group">
                     <label for="roleNPC">Rol:</label>
                     <select name="roleNPC" ng-model="role" required>
-
+                  
                     </select>
                 </div> -->
                 <div id="levelOfNPC" class="form-group">
-                    <label for="levelOfNPC">Nivel:</label>
-                    <input type="number" ng-model="level" min="1" max="5" required/>
-                </div>
+                    <label for="levelOfNPC">{{"npcGeneratorForm.title.level"|translate}}:</label>
+                    <!--TODO max por el momento es 1 pero ´habrá que ir aumentandolo hasta 5 -->
+                    <input type="number" ng-model="level" min="1" max="1" required/>
+                </div> 
 
                 <input id="generarNPC" type="submit" />
             </form>
