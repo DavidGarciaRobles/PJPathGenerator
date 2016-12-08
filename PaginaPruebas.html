@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app="PruebasAngular">
+<html>
 <head>
     <title>PruebasAngular</title>
 	<meta charset="utf-8" />
@@ -11,64 +11,51 @@
 
     <!-- Angular -->
     <script src="Scripts/angular.js"></script>
+
+    <script src="app.js"></script>
+    <script src="controllers/CharacterGeneratorController.js"></script>
 </head>
-<body ng-controller="Estadisticas">
+<body>
     <header></header>
-    <main>
-        <div id="Cuadro estadisticas" style="align-content:center">
-            <div id="Tabla estadisticas">
-                <table>
-                    <tbody>
-                        <tr id="Fuerza">
-                            <td><input id="NombreFue" type="text" style="width:35px" /></td>
-                            <td><input id="BaseFue" type="text" style="width:25px" /></td>
-                            <td><input id="ModFue" type="text" style="width:25px" /></td>
-                            <td><input id="TempFue" type="text" style="width:25px" /></td>
-                            <td><input id="TempModFue" type="text" style="width:25px" /></td>
-                        </tr>
-                        <tr id="Destreza">
-                            <td><input id="NombreDes" type="text" style="width:35px" /></td>
-                            <td><input id="BaseDes" type="text" style="width:25px" /></td>
-                            <td><input id="ModDes" type="text" style="width:25px" /></td>
-                            <td><input id="TempDes" type="text" style="width:25px" /></td>
-                            <td><input id="TempModDes" type="text" style="width:25px" /></td>
-                        </tr>
-                        <tr id="Constitución">
-                            <td><input id="NombreCon" type="text" style="width:35px" /></td>
-                            <td><input id="BaseCon" type="text" style="width:25px" /></td>
-                            <td><input id="ModCon" type="text" style="width:25px" /></td>
-                            <td><input id="TempCon" type="text" style="width:25px" /></td>
-                            <td><input id="TempModCon" type="text" style="width:25px" /></td>
-                        </tr>
-                        <tr id="Inteligencia">
-                            <td><input id="NombreInt" type="text" style="width:35px" /></td>
-                            <td><input id="BaseInt" type="text" style="width:25px" /></td>
-                            <td><input id="ModInt" type="text" style="width:25px" /></td>
-                            <td><input id="TempInt" type="text" style="width:25px" /></td>
-                            <td><input id="TempModInt" type="text" style="width:25px" /></td>
-                        </tr>
-                        <tr id="Sabiduria">
-                            <td><input id="NombreSab" type="text" style="width:35px" /></td>
-                            <td><input id="BaseSab" type="text" style="width:25px" /></td>
-                            <td><input id="ModSab" type="text" style="width:25px" /></td>
-                            <td><input id="TempSab" type="text" style="width:25px" /></td>
-                            <td><input id="TempModSab" type="text" style="width:25px" /></td>
-                        </tr>
-                        <tr id="Carisma">
-                            <td><input id="NombreCar" type="text" style="width:35px" /></td>
-                            <td><input id="BaseCar" type="text" style="width:25px" /></td>
-                            <td><input id="ModCar" type="text" style="width:25px" /></td>
-                            <td><input id="TempCar" type="text" style="width:25px" /></td>
-                            <td><input id="TempModCar" type="text" style="width:25px" /></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div>
-                <input id="Calcular" type="button" value="Calcular" ng-click="CalcularEstadisticas()" />
-            </div>
+    <main ng-app="myApp">
+        <div ng-controller="CharacterGeneratorController">
+            <!-- Formulario con campos que debe introducir el usuario para generar personaje -->
+            <form class="form-inline" ng-submit="generateNPC()">
+                <!-- Raza del personaje -->
+                <div id="raza" class="form-group">
+                    <label for="raze">Raza:</label>
+                    <select name="raze" ng-model="raze" required>
+                        <!--TODO Deberia cargarlo por AJAX -->
+                        <option value="1">Elfo</option>
+                        <option value="2">Humano</option>
+                    </select>
+                </div>
+                <!-- Clase del PNJ -->
+                <div id="claseNPC" class="form-group">
+                    <label for="claseNPC">Clase:</label>
+                    <select name="claseNPC" ng-model="classNPC" required>
+                        <!--TODO Deberia cargarlo por AJAX -->
+                        <option value="1">Guerrero</option>
+                        <option value="2">Clérigo</option>
+                    </select>
+                </div> 
+                <!-- Rol del PNJ -->
+                <!--<div id="roleNPC" class="form-group">
+                    <label for="roleNPC">Rol:</label>
+                    <select name="roleNPC" ng-model="role" required>
+                  
+                    </select>
+                </div> -->
+                <div id="levelOfNPC" class="form-group">
+                    <label for="levelOfNPC">Nivel:</label>
+                    <input type="number" ng-model="level" min="1" max="1" required/>
+                </div> 
+
+                <input id="generarNPC" type="submit" />
+            </form>
 
         </div>
     </main>
 </body>
+
 </html>
