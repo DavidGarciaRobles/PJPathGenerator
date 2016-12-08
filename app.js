@@ -1,4 +1,4 @@
 ﻿angular.module('myApp', []).config(function($logProvider) {
-    // you can configure the debug option
+    // habilitado logger debug para trazas de prueba
   $logProvider.debugEnabled(true);
 });

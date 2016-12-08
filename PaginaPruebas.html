@@ -10,8 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- Angular -->
-    <script src="Scripts/angular.js"></script>
-
+    <script src="Scripts/angular.js"></script> <!-- TODO importarlos de fuente externa -->
     <script src="app.js"></script>
     <script src="controllers/CharacterGeneratorController.js"></script>
 </head>
@@ -48,6 +47,7 @@
                 </div> -->
                 <div id="levelOfNPC" class="form-group">
                     <label for="levelOfNPC">Nivel:</label>
+                    <!--TODO max por el momento es 1 pero ´habrá que ir aumentandolo hasta 5 -->
                     <input type="number" ng-model="level" min="1" max="1" required/>
                 </div> 
 
