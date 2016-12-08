@@ -24,32 +24,30 @@
                 <!-- Raza del personaje -->
                 <div id="raza" class="form-group">
                     <label for="raze">Raza:</label>
-                    <select name="raze" ng-model="raze" required>
+                    <select ng-controller="CargaComboRazas" name="raze" ng-model="raze" required>
                         <!--TODO Deberia cargarlo por AJAX -->
-                        <option value="1">Elfo</option>
-                        <option value="2">Humano</option>
+                        <option ng-repeat="data in datos" value= {{ data.IDRAZA }}>{{ data.RAZA }}</option>
                     </select>
                 </div>
                 <!-- Clase del PNJ -->
                 <div id="claseNPC" class="form-group">
                     <label for="claseNPC">Clase:</label>
-                    <select name="claseNPC" ng-model="classNPC" required>
+                    <select ng-controller="CargaComboClases" name="claseNPC" ng-model="classNPC" required>
                         <!--TODO Deberia cargarlo por AJAX -->
-                        <option value="1">Guerrero</option>
-                        <option value="2">Clérigo</option>
+                        <option ng-repeat="data in datos" value= {{ data.IDCLASE }}>{{ data.NOMBRE }}</option>
                     </select>
-                </div> 
+                </div>
                 <!-- Rol del PNJ -->
                 <!--<div id="roleNPC" class="form-group">
                     <label for="roleNPC">Rol:</label>
                     <select name="roleNPC" ng-model="role" required>
-                  
+
                     </select>
                 </div> -->
                 <div id="levelOfNPC" class="form-group">
                     <label for="levelOfNPC">Nivel:</label>
-                    <input type="number" ng-model="level" min="1" max="1" required/>
-                </div> 
+                    <input type="number" ng-model="level" min="1" max="5" required/>
+                </div>
 
                 <input id="generarNPC" type="submit" />
             </form>
