@@ -17,4 +17,11 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  data;
+
+     constructor(private http: HttpModule) {
+         this.http.get('../assets/data/Caracteristicas.json')
+                 .subscribe(res => this.data = res.json());
+                 }
+}

@@ -1,0 +1,32 @@
+[
+    {
+      "ID_Caracterisca": 1,
+      "NombreCar": "Fuerza",
+      "AbreviacionCar":"Fue"
+    },
+    {
+        "ID_Caracterisca": 2,
+        "NombreCar": "Destreza",
+        "AbreviacionCar":"Des"
+    },
+    {
+        "ID_Caracterisca": 3,
+        "NombreCar": "Constitución",
+        "AbreviacionCar":"Con"
+    },
+    {
+        "ID_Caracterisca": 4,
+        "NombreCar": "Inteligencia",
+        "AbreviacionCar":"Int"
+    },
+    {
+        "ID_Caracterisca": 5,
+        "NombreCar": "Sabiduria",
+        "AbreviacionCar":"Sab"
+    },
+    {
+        "ID_Caracterisca": 6,
+        "NombreCar": "Carisma",
+        "AbreviacionCar":"Car"
+    }
+]

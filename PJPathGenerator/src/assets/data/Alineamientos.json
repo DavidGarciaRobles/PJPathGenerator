@@ -1,0 +1,107 @@
+[
+  {
+    "ID_ALINEAMIENTO": 1,
+    "DESCRIPCION": "LB",
+    "ALIN_PERMITIDOS": 1
+  },
+  {
+    "ID_ALINEAMIENTO": 2,
+    "DESCRIPCION": "LN",
+    "ALIN_PERMITIDOS": 2
+  },
+  {
+    "ID_ALINEAMIENTO": 3,
+    "DESCRIPCION": "LM",
+    "ALIN_PERMITIDOS": 3
+  },
+  {
+    "ID_ALINEAMIENTO": 4,
+    "DESCRIPCION": "NB",
+    "ALIN_PERMITIDOS": 4
+  },
+  {
+    "ID_ALINEAMIENTO": 5,
+    "DESCRIPCION": "NN",
+    "ALIN_PERMITIDOS": 5
+  },
+  {
+    "ID_ALINEAMIENTO": 6,
+    "DESCRIPCION": "NM",
+    "ALIN_PERMITIDOS": 6
+  },
+  {
+    "ID_ALINEAMIENTO": 7,
+    "DESCRIPCION": "CB",
+    "ALIN_PERMITIDOS": 7
+  },
+  {
+    "ID_ALINEAMIENTO": 8,
+    "DESCRIPCION": "CN",
+    "ALIN_PERMITIDOS": 8
+  },
+  {
+    "ID_ALINEAMIENTO": 9,
+    "DESCRIPCION": "CM",
+    "ALIN_PERMITIDOS": 9
+  },
+  {
+    "ID_ALINEAMIENTO": 10,
+    "DESCRIPCION": "BUENO",
+    "ALIN_PERMITIDOS": "1,4,7"
+  },
+  {
+    "ID_ALINEAMIENTO": 11,
+    "DESCRIPCION": "NEUTRAL",
+    "ALIN_PERMITIDOS": "2,4,5,6,8"
+  },
+  {
+    "ID_ALINEAMIENTO": 12,
+    "DESCRIPCION": "MALIGNO",
+    "ALIN_PERMITIDOS": "3,6,9"
+  },
+  {
+    "ID_ALINEAMIENTO": 13,
+    "DESCRIPCION": "LEGAL",
+    "ALIN_PERMITIDOS": "1,2,3"
+  },
+  {
+    "ID_ALINEAMIENTO": 14,
+    "DESCRIPCION": "NEUTRAL AUTENTICO",
+    "ALIN_PERMITIDOS": 5
+  },
+  {
+    "ID_ALINEAMIENTO": 15,
+    "DESCRIPCION": "CAOTICO",
+    "ALIN_PERMITIDOS": "7,8,9"
+  },
+  {
+    "ID_ALINEAMIENTO": 16,
+    "DESCRIPCION": "NO BUENO",
+    "ALIN_PERMITIDOS": "2,3,5,6,8,9"
+  },
+  {
+    "ID_ALINEAMIENTO": 17,
+    "DESCRIPCION": "NO NEUTRAL",
+    "ALIN_PERMITIDOS": "1,3,7,9"
+  },
+  {
+    "ID_ALINEAMIENTO": 18,
+    "DESCRIPCION": "NO MALIGNO",
+    "ALIN_PERMITIDOS": "1,2,4,5,7,8"
+  },
+  {
+    "ID_ALINEAMIENTO": 19,
+    "DESCRIPCION": "NO LEGAL",
+    "ALIN_PERMITIDOS": "4,5,6,7,8,9"
+  },
+  {
+    "ID_ALINEAMIENTO": 20,
+    "DESCRIPCION": "NO CAOTICO",
+    "ALIN_PERMITIDOS": "1,2,3,4,5,6"
+  },
+  {
+    "ID_ALINEAMIENTO": 21,
+    "DESCRIPCION": "CUALQUIERA",
+    "ALIN_PERMITIDOS": "1,2,3,4,5,6,7,8,9"
+  }
+]
