@@ -5,6 +5,9 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -18,10 +21,10 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  data;
+  Caracteristicas;
 
-     constructor(private http: HttpModule) {
+     constructor(private http: Http) {
          this.http.get('../assets/data/Caracteristicas.json')
-                 .subscribe(res => this.data = res.json());
+                 .subscribe(res => this.Caracteristicas = res.json());
                  }
 }
