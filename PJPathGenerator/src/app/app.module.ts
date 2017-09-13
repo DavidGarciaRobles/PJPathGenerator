@@ -12,8 +12,7 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @NgModule({
-  declarations: [
-    AppComponent, CarComponent, KeyUpComponent_v1
+  declarations: [CarComponent, KeyUpComponent_v1
   ],
   imports: [
     BrowserModule,
@@ -21,6 +20,6 @@ import 'rxjs/add/operator/map';
     HttpModule
   ],
   providers: [CarComponent],
-  bootstrap: [AppComponent, CarComponent, KeyUpComponent_v1]
+  bootstrap: [CarComponent, KeyUpComponent_v1]
 })
 export class AppModule {}
