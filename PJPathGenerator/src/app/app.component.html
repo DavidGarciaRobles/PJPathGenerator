@@ -1,3 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+
+<table>
+    <tr>
+        <td>Caracteristica</td>
+        <td>PBase</td>
+        <td>ModBase</td>
+        <td>PTemp</td>
+        <td>ModTemp</td>
+    </tr>
+    <template ngFor let-Car [ngForOf]="Caracteristicas">
+        <tr>
+            <td id="{{Car.AbreviacionCar}}_Base">{{Car.AbreviacionCar}}</td>
+            <td>
+                <input id="{{Car.AbreviacionCar}}_PBase" type="number" [(ngModel)]= "pbase">
+            </td>
+            <td><input id= "{{Car.AbreviacionCar}}_ModBase" value= "{{pbase}}%2"></td>
+            <td><input></td>
+            <td><input></td>
+        </tr>
+    </template>
+  </table>

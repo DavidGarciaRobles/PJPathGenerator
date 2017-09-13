@@ -4,27 +4,23 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CarComponent } from './app.component';
+import { KeyUpComponent_v1 } from './app.component';
+
 
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, CarComponent, KeyUpComponent_v1
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [CarComponent],
+  bootstrap: [AppComponent, CarComponent, KeyUpComponent_v1]
 })
-export class AppModule {
-  Caracteristicas;
-
-     constructor(private http: Http) {
-         this.http.get('../assets/data/Caracteristicas.json')
-                 .subscribe(res => this.Caracteristicas = res.json());
-                 }
-}
+export class AppModule {}
